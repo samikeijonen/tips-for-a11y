@@ -37,7 +37,8 @@ a:visited {
     font-weight: 700;
 }
 
-.button {
+.button,
+.button:visited {
     background-color: #242424;
     border: none;
     color: #fff;
