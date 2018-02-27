@@ -40,6 +40,69 @@
         <li><a href="#">Read more <span class="screen-reader-text">about cute kittens</span></a></li>
         <li><a href="#" aria-label="Read more about cute kittens">Read more</a></li>
       </ul>
+
+      <h2>Form tests</h2>
+      <h3>Avoid using only placeholders</h3>
+      <form>
+        <p class="mt-small mb-small">
+          <input type="text" placeholder="First name">
+        </p>
+        <p class="mt-small mb-small">
+          <input type="text" placeholder="Last name">
+        </p>
+        <p class="mt-small mb-small"> 
+          <input type="text" placeholder="Username">
+        </p>
+      </form>
+
+      <h3>Short forms can have placeholder and visually hidden label</h3>
+      <form role="search">
+        <p>
+          <label for="search"><span class="screen-reader-text">Search:</span></label>
+          <input type="search" id="search" placeholder="Search text...">
+        </p>
+      </form>
+
+      <h3>Using labels always works</h3>
+      <form>
+        <p>
+          <label for="first-name">First name:</label>
+          <input type="text" id="first-name">
+        </p>
+        <p>
+          <label for="last-name">Last name:</label>
+          <input type="text" id="last-name">
+        </p>
+        <p>
+          <label for="user-name">User name:</label>
+          <input type="text" id="user-name">
+        </p>
+      </form>
+
+      <h3>Givin hints using placeholders</h3>
+      <form>
+        <p class="mt-small mb-small">
+          <label for="email-server">Mail server:</label>
+          <input type="text" id="email-server" placeholder="mail.example.com">
+        </p>
+        <p class="mt-small mb-small">
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="email@example.com">
+        </p>
+      </form>
+
+      <h3>Grouping with fieldset and legend</h3>
+      <form>
+          <fieldset>
+            <legend>Choose a shipping method:</legend>
+            <input id="overnight" type="radio" name="shipping" value="overnight">
+            <label for="overnight">Overnight</label><br>
+            <input id="twoday" type="radio" name="shipping" value="twoday">
+            <label for="twoday">Two day</label><br>
+            <input id="ground" type="radio" name="shipping" value="ground">
+            <label for="ground">Ground</label>
+          </fieldset>
+      </form>
     </article>
   </main>
 

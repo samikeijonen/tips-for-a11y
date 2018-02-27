@@ -32,6 +32,10 @@ a:visited {
     color: #2516c7;
 }
 
+label {
+    display: block;
+}
+
 .site-title {
     font-size: 2em;
     font-weight: 700;
@@ -82,4 +86,12 @@ a:visited {
     top: 5px;
     width: auto;
     z-index: 100000; /* Above WP toolbar. */
+}
+
+.mb-small {
+    margin-bottom: 0.5rem;
+}
+
+.mt-small {
+    margin-top: 0.5rem;
 }
