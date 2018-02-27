@@ -1,0 +1,23 @@
+{
+  "name": "tips-for-a11y",
+  "version": "1.0.0",
+  "description": "A11y testing page",
+  "main": "ds",
+  "dependencies": {
+    "a11y-dialog": "^4.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samikeijonen/tips-for-a11y.git"
+  },
+  "keywords": [
+    "sd"
+  ],
+  "author": "Sami Keijonen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samikeijonen/tips-for-a11y/issues"
+  },
+  "homepage": "https://github.com/samikeijonen/tips-for-a11y#readme"
+}
