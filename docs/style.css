@@ -17,8 +17,18 @@ textarea {
 	color: #404040;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 1rem;
-	line-height: 1.5;
+    line-height: 1.5;
 	word-wrap: break-word;
+}
+
+body {
+    max-width: 70em;
+    margin: 4rem auto;
+    padding: 1.5rem;
+}
+
+.site-title {
+    font-size: 2em;
 }
 
 .button {
@@ -31,4 +41,8 @@ textarea {
     font-weight: 600;
     padding: 1rem 1.5rem;
     text-decoration: none;
+}
+
+.button[disabled] {
+    background-color: #666;
 }
