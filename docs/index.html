@@ -127,6 +127,7 @@
       </ul>
 
       <h2>Modal dialog</h2>
+      <button class="btn" type="button" data-a11y-dialog-show="my-accessible-dialog">Open the dialog</button>
     </article>
   </main>
 
@@ -145,7 +146,31 @@
 		</nav>
   </footer>
 
-  <script src="node_modules/a11y-dialog/a11y-dialog.min.js"></script>
+  <div class="dialog" id="my-accessible-dialog" aria-hidden="true">
+    <div class="dialog-overlay" tabindex="-1" data-a11y-dialog-hide></div>
+      <div class="dialog-content" role="dialog" aria-labelledby="dialog-title">
+        <div role="document">
+          <button class="dialog-close" type="button" data-a11y-dialog-hide aria-label="Close this dialog window">
+            &times;
+          </button>
+          <h1 id="dialog-title">Dialog Title</h1>
+          <form>
+              <fieldset>
+                <legend>Feedback from site:</legend>
+                <input id="good" type="radio" name="feedback" value="good">
+                <label for="good">Good</label><br>
+                <input id="bad" type="radio" name="feedback" value="bad">
+                <label for="bad">Bad</label><br>
+                <input id="ugly" type="radio" name="feedback" value="ugly">
+                <label for="grouglyund">Ugly</label>
+              </fieldset>
+              <button class="btn give-feedback mt-small" type="submit" name="button">Give feedback</button>
+          </form>
+        </div>
+      </div>
+  </div>
+
+  <script src="../node_modules/a11y-dialog/a11y-dialog.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
