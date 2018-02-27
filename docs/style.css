@@ -27,6 +27,11 @@ body {
     padding: 1.5rem;
 }
 
+a,
+a:visited {
+    color: #2516c7;
+}
+
 .site-title {
     font-size: 2em;
     font-weight: 700;
